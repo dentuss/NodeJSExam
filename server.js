@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(session({
-    secret: 'yourSecretKey',
+    secret: 'SecretKey',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
